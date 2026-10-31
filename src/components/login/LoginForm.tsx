@@ -1,8 +1,12 @@
 import React from "react";
+import { UserContext } from "../../UserContext";
 import { Link } from "react-router-dom";
 import nexoBranco from "../../assets/nexoBranco.png";
 
 const LoginForm: React.FC = () => {
+  const context = React.useContext(UserContext);
+  console.log(context);
+
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     console.log("Form submitted");
@@ -79,7 +83,10 @@ const LoginForm: React.FC = () => {
           </h1>
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col mt-46 w-132">
-          <h1 className="text-4xl mb-4">Entrar</h1>
+          <h1 className="text-4xl mb-4">
+            Entrar
+            {context?.usuario}
+          </h1>
           <p className="text-gray-500 mb-4">
             Use seu e-mail corporativo e a senha da rede Neco.
           </p>
