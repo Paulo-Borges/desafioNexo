@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import { UserStorage } from "./UserStorage";
 import ChatClientLayout from "./components/chatClientLayout";
 import AtendenteLayout from "./components/AtendenteLayout";
+import Perfil from "./pages/Perfil";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route element={<ChatClientLayout />}>
               <Route path="/chat" element={<Chat />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Route>
 
             <Route element={<AtendenteLayout />}>

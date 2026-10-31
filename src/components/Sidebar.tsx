@@ -3,6 +3,7 @@ import Atendimento from "../assets/atendimento.png";
 import Perfil from "../assets/perfil.png";
 import As from "../assets/As.png";
 import Sair from "../assets/sair.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -10,14 +11,20 @@ const Sidebar = () => {
       <div>
         <img src={NexoLogo} alt="" />
       </div>
-      <div className="flex items-center gap-4">
+      <Link
+        to="/chat"
+        className="flex items-center gap-4 text-black hover:text-[RGBA(0,106,199,1)] bg-transparent hover:bg-[RGBA(2,133,247,0.07)] rounded-xl"
+      >
         <img src={Atendimento} alt="" />
-        <p>Atendimento</p>
-      </div>
-      <div className="flex items-center gap-4">
+        <p className="text-sm">Atendimento</p>
+      </Link>
+      <Link
+        to="/perfil"
+        className="flex items-center gap-4 text-black hover:text-[RGBA(0,106,199,1)] bg-transparent hover:bg-[RGBA(2,133,247,0.07)] rounded-xl"
+      >
         <img src={Perfil} alt="" />
-        <p>Meu Perfil</p>
-      </div>
+        <p className="text-sm">Meu Perfil</p>
+      </Link>
       <div className="flex-1 flex flex-col items-center justify-center w-full">
         <div></div>
       </div>
@@ -26,14 +33,14 @@ const Sidebar = () => {
           <img src={As} alt="" />
         </div>
         <div>
-          <p>Ana Souza</p>
-          <p>online . Financeiro. INC-20311</p>
+          <p className="text-sm">Ana Souza</p>
+          <p className="text-xs">ana.souza@nexo.com.br</p>
         </div>
       </div>
-      <div className="flex items-center gap-4">
+      <Link to="login" className="flex items-center gap-2">
         <img src={Sair} alt="" />
-        <p>Sair</p>
-      </div>
+        <p className="text-sm">Sair</p>
+      </Link>
     </section>
   );
 };

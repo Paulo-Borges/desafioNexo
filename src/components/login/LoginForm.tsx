@@ -2,14 +2,17 @@ import React from "react";
 import { UserContext } from "../../UserContext";
 import { Link } from "react-router-dom";
 import nexoBranco from "../../assets/nexoBranco.png";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
   const context = React.useContext(UserContext);
+  const navigate = useNavigate();
   console.log(context);
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     console.log("Form submitted");
+    navigate("/chat");
   };
 
   return (
