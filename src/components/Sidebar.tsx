@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <section className="bg-white fixed left-0 h-full z-50 flex flex-col p-4 space-y-6 border border-l-mist-200 ">
+    <section className="bg-white fixed left-0 w-60 h-full z-50 flex flex-col p-4 space-y-6 border border-l-mist-200 ">
       <div>
         <img src={NexoLogo} alt="" />
       </div>

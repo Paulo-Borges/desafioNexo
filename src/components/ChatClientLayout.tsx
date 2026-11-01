@@ -3,10 +3,12 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 const ChatClientLayout = () => {
   return (
-    <div>
+    <div className="">
       <Sidebar />
       <Header />
-      <Outlet />
+      <main className="ml-60 pt-18 h-screen">
+        <Outlet />
+      </main>
     </div>
   );
 };
