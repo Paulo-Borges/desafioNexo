@@ -13,19 +13,19 @@ const Chat = () => {
 
       <div className="flex flex-col h-screen items-center justify-center">
         <div className="flex justify-center items-center space-x-2 mb-2 ">
-          <p className="font-bold text-xs">Nexo Assist</p>
+          <p className="font-bold text-xs -ml-18">Nexo Assist</p>
           <img
             src={Visto}
             style={{ width: "8px", height: "8px" }}
             alt="description"
           />
-          <p>consultou seus chamados</p>
+          <p className="text-xs">consultou seus chamados</p>
           <img
             src={Visto}
             style={{ width: "8px", height: "8px" }}
             alt="description"
           />
-          <p>buscou na central de ajuda</p>
+          <p className="text-xs">buscou na central de ajuda</p>
         </div>
         <div className="flex flex-col text-xs border border-gray-200 p-4 rounded space-y-2 ">
           <p>
@@ -58,62 +58,72 @@ const Chat = () => {
         </p>
       </div>
 
-      <div className="flex flex-col h-screen items-center justify-start ">
-        <div className="flex justify-center mb-2 ">
-          <p className="flex mb-2 mr-20 font-bold text-xs">Nexo Assist</p>
+      <div className="flex flex-col h-screen items-center justify-center">
+        <div className="flex justify-center items-center space-x-2 mb-2 ">
+          <p className="font-bold text-xs">Nexo Assist</p>
           <img
             src={Visto}
             style={{ width: "8px", height: "8px" }}
             alt="description"
           />
-          <p>classificou a prioridade</p>
+          <p className="text-xs">classificou a prioridade</p>
           <img
             src={Visto}
             style={{ width: "8px", height: "8px" }}
             alt="description"
           />
-          <p>consultou o SLA</p>
+          <p className="text-xs">consultou o SLA</p>
           <img
             src={Visto}
             style={{ width: "8px", height: "8px" }}
             alt="description"
           />
-          <p>montou o rascunho</p>
+          <p className="text-xs">montou o rascunho</p>
         </div>
 
-        <div className="flex flex-col justify-start ">
-          <p>Coloquei prioridade alta no chamado</p>
+        <div className="flex flex-col -ml-18 text-xs border border-gray-200 p-4 rounded space-y-2 mb-2">
+          <p>
+            Coloquei prioridade alta no chamado - a resposta chega antes das
+            14h.
+          </p>
           <p>Confira antes de eu criar o chamado</p>
         </div>
 
-        <div className="flex flex-col ">
-          <p>Novo chamado - Rascunho D-381</p>
-          <p>VPN não conecta no notebook - erro 809</p>
-          <p>
-            Desde 20/10 o notebook (Windows 11) não consegue conectar na VPN
-          </p>
-          <div>
-            <div>
-              <p>Categoria</p>
-              <p>Rede e Vpn</p>
-            </div>
-            <div>
-              <p>Prioridade</p>
-              <p>Alta . resposta até 13:43</p>
-            </div>
-            <div>
-              <p>afetados</p>
-              <p>Somente você</p>
+        <div className="flex flex-col text-xs border ml-12 border-gray-200 p-4 rounded space-y-2 ">
+          <div className="flex justify-between items-center">
+            <p className="text-xs">Novo chamado - Rascunho D-381</p>
+            <div className="flex items-center space-x-6 bg-[RGBA(0,189,107,0.08)] px-2 py-1 rounded-2xl">
+              <p className="text-[RGBA(148,99,0,1)]">Aguardando confirmação</p>
             </div>
           </div>
-        </div>
-        <div>
-          <button>
-            <p>Confirmar</p>
-            <img src={confirmar} alt="description" />
-          </button>
-          <button>Editar</button>
-          <button>Cancelar</button>
+          <p className="font-bold">VPN não conecta no notebook - erro 809</p>
+          <p className="text-xs border-b border-gray-200 pb-2">
+            Desde 20/10 o notebook (Windows 11) não consegue conectar na VPN e
+            apresenta o erro 809.
+          </p>
+          <div className="flex space-x-9">
+            <div>
+              <p className="text-sm">Categoria</p>
+              <p className="text-xs">Rede e Vpn</p>
+            </div>
+            <div>
+              <p className="text-xs">Prioridade</p>
+              <p className="text-xs">Alta . resposta até 13:43</p>
+            </div>
+            <div>
+              <p className="text-xs">afetados</p>
+              <p className="text-xs">Somente você</p>
+            </div>
+          </div>
+
+          <div className="flex space-x-4 bg-gray-100 p-2 rounded-b-xl">
+            <button className="flex items-center gap-2 bg-[RGBA(0,0,0,0.1)] p-2 rounded">
+              <p>Confirmar</p>
+              <img src={confirmar} alt="description" />
+            </button>
+            <button>Editar</button>
+            <button>Cancelar</button>
+          </div>
         </div>
       </div>
       <div className="flex  h-screen items-center justify-center gap-9 bg-gray-100">
