@@ -4,7 +4,7 @@ import Atendente from "./pages/Atendente";
 import Login from "./components/login/Login";
 import Home from "./pages/Home";
 import { UserStorage } from "./UserStorage";
-import ChatClientLayout from "./components/chatClientLayout";
+import ChatClientLayout from "./components/ChatClientLayout";
 import AtendenteLayout from "./components/AtendenteLayout";
 import Perfil from "./pages/Perfil";
 
