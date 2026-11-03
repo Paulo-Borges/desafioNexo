@@ -27,7 +27,7 @@ const Chat = () => {
           />
           <p className="text-xs">buscou na central de ajuda</p>
         </div>
-        <div className="flex flex-col text-xs border border-gray-200 p-4 rounded space-y-2 ">
+        <div className="flex flex-col text-xs border border-gray-200 p-4 rounded-xl space-y-2 ">
           <p>
             Não há chamado aberto dobre VPN, e o artigo do erro 809 vale só para
             Windows 10
@@ -81,7 +81,7 @@ const Chat = () => {
           <p className="text-xs">montou o rascunho</p>
         </div>
 
-        <div className="flex flex-col -ml-18 text-xs border border-gray-200 p-4 rounded space-y-2 mb-2">
+        <div className="flex flex-col -ml-18 text-xs border border-gray-200 p-4 rounded-xl space-y-2 mb-2">
           <p>
             Coloquei prioridade alta no chamado - a resposta chega antes das
             14h.
@@ -89,7 +89,7 @@ const Chat = () => {
           <p>Confira antes de eu criar o chamado</p>
         </div>
 
-        <div className="flex flex-col text-xs border ml-12 border-gray-200 p-4 rounded space-y-2 ">
+        <div className="flex flex-col text-xs border ml-12 border-gray-200 p-4 rounded-xl space-y-2 ">
           <div className="flex justify-between items-center">
             <p className="text-xs">Novo chamado - Rascunho D-381</p>
             <div className="flex items-center space-x-6 bg-[RGBA(0,189,107,0.08)] px-2 py-1 rounded-2xl">
@@ -116,25 +116,29 @@ const Chat = () => {
             </div>
           </div>
 
-          <div className="flex space-x-4 bg-gray-100 p-2 rounded-b-xl">
-            <button className="flex items-center gap-2 bg-[RGBA(0,0,0,0.1)] p-2 rounded">
+          <div className="flex space-x-2 bg-gray-100 p-2 rounded-b-xl">
+            <button className="flex items-center gap-2 bg-[RGBA(0,98,196,1)] hover:bg-[RGBA(0,98,196,0.8)] hover:text-white p-2 rounded">
               <p>Confirmar</p>
               <img src={confirmar} alt="description" />
             </button>
-            <button>Editar</button>
-            <button>Cancelar</button>
+            <button className="flex items-center gap-2 bg-white hover:bg-[RGBA(0,98,196,0.8)] hover:text-white p-2 rounded">
+              Editar
+            </button>
+            <button className="text-black hover:text-[RGBA(0,98,196,0.8)]">
+              Cancelar
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex  h-screen items-center justify-center gap-9 bg-gray-100">
+      <div className="flex  h-screen items-center justify-center gap-72 ml-11 border border-gray-200 mt-2 rounded-xl w-auto pr-2">
         <input
-          className="border p-2 rounded "
+          className=" p-2 rounded text-xs"
           type="text"
           placeholder="Escreva para o Nexo..."
         />
-        <button className="flex items-center gap-2 bg-[RGBA(0,0,0,0.1)]">
+        <button className="flex items-center gap-2 px-2 py-1 rounded bg-[RGBA(0,98,196,0.8)] hover:bg-[RGBA(0,98,196,1)] text-white ">
           <img src={enviar} alt="description" />
-          <p>Enviar</p>
+          <p className="text-xs ">Enviar</p>
         </button>
       </div>
     </div>
