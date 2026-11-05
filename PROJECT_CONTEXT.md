@@ -23,7 +23,7 @@ Construção de uma solução para Service Desk inteligente da Nexo Assist com:
 
 | Requisito / Módulo | Status | Descrição |
 | :--- | :---: | :--- |
-| **1. Autenticação & Usuários** | ✅ Concluído | Mock com perfis de funcionário comum e analista de suporte N1. |
+| **1. Autenticação & Usuários** | ✅ Concluído | Mock com seletor interativo de perfis no Login: Colaborador (Ana Souza - Chat) e Analista N1 (Lucas Ribeiro - Console). |
 | **2. Chat do Funcionário** | ✅ Concluído | Mensagens, opções rápidas, rascunhos, histórico e alerta de limite. |
 | **3. Cérebro do Agente (Triagem)** | ✅ Concluído | Identificação de palavras-chave, sugestão de artigos, cálculo de prioridade/SLA. |
 | **4. Central de Ajuda & Chamados** | ✅ Concluído | Artigos de TI, abertura de chamados simulada com prevenção de duplicidade. |
@@ -43,5 +43,5 @@ Construção de uma solução para Service Desk inteligente da Nexo Assist com:
 ---
 
 ## 🚀 Próximos Passos
-1. **Validação e Testes E2E:** Rodar localmente via `npm run dev` e testar os cenários de uso (autoatendimento, criação de ticket e transbordo para analista).
-2. **Documentação de Entrega:** Atualizar o `README.md` com arquitetura, instruções de execução e diferenciais da solução.
+1. **Documentação de Entrega:** ✅ Concluído! `README.md` completo gerado com arquitetura, diagramas Mermaid, regras de decisão, trade-offs e roteiro de testes.
+2. **Git / Versionamento:** Realizar o commit das novidades (seletor de perfil, console Pen.dev e README.md).
