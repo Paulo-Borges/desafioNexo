@@ -12,7 +12,7 @@ const Login: React.FC = () => {
         <Route path="/" element={<LoginForm />} />
         <Route path="esqueci" element={<LoginEsqueciSenha />} />
         <Route path="resetar" element={<LoginResetar />} />
-        <Route path="create" element={<LoginCreate />} />
+        <Route path="criar" element={<LoginCreate />} />
       </Routes>
     </div>
   );
