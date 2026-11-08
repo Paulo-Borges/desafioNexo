@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer>
-      <p>© 2024 NEXO. All rights reserved.</p>
+    <footer className="flex justify-center items-center p-4 bg-gray-200 w-screen">
+      <p>© 2026 Borges.</p>
     </footer>
   );
 };

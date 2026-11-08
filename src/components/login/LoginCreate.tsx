@@ -1,4 +1,5 @@
 import { USER_CREATE } from "../../api_Fake";
+import Footer from "../Footer";
 
 const LoginCreate: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent) => {
@@ -57,6 +58,7 @@ const LoginCreate: React.FC = () => {
           Criar Conta
         </button>
       </form>
+      <Footer></Footer>
     </section>
   );
 };
