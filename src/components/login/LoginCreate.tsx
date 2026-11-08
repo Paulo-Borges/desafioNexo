@@ -14,52 +14,54 @@ const LoginCreate: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center">
-      <h1>Criar Conta</h1>
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center"
-      >
-        <div className="flex flex-col">
-          <label htmlFor="username">Usuário</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            required
-            className="border p-2 rounded"
-          />
-        </div>
-
-        <div className="flex flex-col">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            className="border p-2 rounded"
-          />
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="password">Senha</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            className="border p-2 rounded"
-          />
-        </div>
-        <button
-          type="submit"
-          className="mt-4 bg-blue-500 text-white p-2 rounded"
+    <div className="min-h-screen flex flex-col justify-between">
+      <section className="flex flex-col items-center justify-center flex-1">
+        <h1>Criar Conta</h1>
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center justify-center "
         >
-          Criar Conta
-        </button>
-      </form>
-      <Footer></Footer>
-    </section>
+          <div className="flex flex-col">
+            <label htmlFor="username">Usuário</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              className="border p-2 rounded"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="border p-2 rounded"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              className="border p-2 rounded"
+            />
+          </div>
+          <button
+            type="submit"
+            className="mt-4 bg-blue-500 text-white p-2 rounded"
+          >
+            Criar Conta
+          </button>
+        </form>
+      </section>
+      <Footer />
+    </div>
   );
 };
 
